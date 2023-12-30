@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		430DFC2C2B3EB3DD009193CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC2B2B3EB3DD009193CA /* AppDelegate.swift */; };
+		430DFC2E2B3EB3DD009193CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC2D2B3EB3DD009193CA /* SceneDelegate.swift */; };
+		430DFC332B3EB3DD009193CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430DFC312B3EB3DD009193CA /* Main.storyboard */; };
+		430DFC362B3EB3DD009193CA /* Henosis_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC342B3EB3DD009193CA /* Henosis_Task.xcdatamodeld */; };
+		430DFC382B3EB3DF009193CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430DFC372B3EB3DF009193CA /* Assets.xcassets */; };
+		430DFC3B2B3EB3DF009193CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430DFC392B3EB3DF009193CA /* LaunchScreen.storyboard */; };
+		430DFC502B3EB3DF009193CA /* Henosis_TaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC4F2B3EB3DF009193CA /* Henosis_TaskUITests.swift */; };
+		430DFC522B3EB3DF009193CA /* Henosis_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC512B3EB3DF009193CA /* Henosis_TaskUITestsLaunchTests.swift */; };
+		430DFC6B2B3ED035009193CA /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC6A2B3ED035009193CA /* ImageView+Extension.swift */; };
+		430DFC6E2B3ED04B009193CA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 430DFC6D2B3ED04B009193CA /* Kingfisher */; };
+		430DFC702B3ED087009193CA /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC6F2B3ED087009193CA /* ApiManager.swift */; };
+		430DFC852B3EDF7D009193CA /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 430DFC842B3EDF7D009193CA /* sample.json */; };
+		430DFC872B3EE017009193CA /* ConktailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC862B3EE017009193CA /* ConktailModel.swift */; };
+		430DFC892B3EE49C009193CA /* CocktailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC882B3EE49C009193CA /* CocktailListVC.swift */; };
+		430DFC8B2B3EEC37009193CA /* CocktailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC8A2B3EEC37009193CA /* CocktailViewModel.swift */; };
+		430DFC8E2B3EEC80009193CA /* CocktailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430DFC8C2B3EEC80009193CA /* CocktailCell.swift */; };
+		430DFC8F2B3EEC80009193CA /* CocktailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 430DFC8D2B3EEC80009193CA /* CocktailCell.xib */; };
+		43C965AC2B3EF4D9008CAD79 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C965AB2B3EF4D9008CAD79 /* CocktailDetailView.swift */; };
+		43C965AE2B3EFB3A008CAD79 /* IngridientList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C965AD2B3EFB3A008CAD79 /* IngridientList.swift */; };
+		43C965B02B3EFD3B008CAD79 /* CocktailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C965AF2B3EFD3B008CAD79 /* CocktailImage.swift */; };
+		43C965B32B3F5183008CAD79 /* JsonMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C965B22B3F5183008CAD79 /* JsonMapperTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		430DFC422B3EB3DF009193CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430DFC202B3EB3DD009193CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430DFC272B3EB3DD009193CA;
+			remoteInfo = "Henosis-Task";
+		};
+		430DFC4C2B3EB3DF009193CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 430DFC202B3EB3DD009193CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 430DFC272B3EB3DD009193CA;
+			remoteInfo = "Henosis-Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		430DFC282B3EB3DD009193CA /* Henosis-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Henosis-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		430DFC2B2B3EB3DD009193CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		430DFC2D2B3EB3DD009193CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		430DFC322B3EB3DD009193CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		430DFC352B3EB3DD009193CA /* Henosis_Task.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Henosis_Task.xcdatamodel; sourceTree = "<group>"; };
+		430DFC372B3EB3DF009193CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		430DFC3A2B3EB3DF009193CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		430DFC3C2B3EB3DF009193CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		430DFC412B3EB3DF009193CA /* Henosis-TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Henosis-TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		430DFC4B2B3EB3DF009193CA /* Henosis-TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Henosis-TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		430DFC4F2B3EB3DF009193CA /* Henosis_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Henosis_TaskUITests.swift; sourceTree = "<group>"; };
+		430DFC512B3EB3DF009193CA /* Henosis_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Henosis_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		430DFC6A2B3ED035009193CA /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		430DFC6F2B3ED087009193CA /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		430DFC842B3EDF7D009193CA /* sample.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.json; sourceTree = "<group>"; };
+		430DFC862B3EE017009193CA /* ConktailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConktailModel.swift; sourceTree = "<group>"; };
+		430DFC882B3EE49C009193CA /* CocktailListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailListVC.swift; sourceTree = "<group>"; };
+		430DFC8A2B3EEC37009193CA /* CocktailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailViewModel.swift; sourceTree = "<group>"; };
+		430DFC8C2B3EEC80009193CA /* CocktailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCell.swift; sourceTree = "<group>"; };
+		430DFC8D2B3EEC80009193CA /* CocktailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CocktailCell.xib; sourceTree = "<group>"; };
+		43C965AB2B3EF4D9008CAD79 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
+		43C965AD2B3EFB3A008CAD79 /* IngridientList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngridientList.swift; sourceTree = "<group>"; };
+		43C965AF2B3EFD3B008CAD79 /* CocktailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailImage.swift; sourceTree = "<group>"; };
+		43C965B22B3F5183008CAD79 /* JsonMapperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonMapperTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		430DFC252B3EB3DD009193CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430DFC6E2B3ED04B009193CA /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC3E2B3EB3DF009193CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC482B3EB3DF009193CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430DFC1F2B3EB3DD009193CA = {
+			isa = PBXGroup;
+			children = (
+				430DFC2A2B3EB3DD009193CA /* Henosis-Task */,
+				430DFC442B3EB3DF009193CA /* Henosis-TaskTests */,
+				430DFC4E2B3EB3DF009193CA /* Henosis-TaskUITests */,
+				430DFC292B3EB3DD009193CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		430DFC292B3EB3DD009193CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC282B3EB3DD009193CA /* Henosis-Task.app */,
+				430DFC412B3EB3DF009193CA /* Henosis-TaskTests.xctest */,
+				430DFC4B2B3EB3DF009193CA /* Henosis-TaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		430DFC2A2B3EB3DD009193CA /* Henosis-Task */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC5E2B3ECEC1009193CA /* Application */,
+				430DFC632B3ECF1B009193CA /* Resources */,
+				430DFC5F2B3ECECA009193CA /* Extenstions */,
+				430DFC602B3ECED0009193CA /* Helper */,
+				430DFC622B3ECF0B009193CA /* Screens */,
+				430DFC612B3ECEFD009193CA /* StoryBoard */,
+				430DFC3C2B3EB3DF009193CA /* Info.plist */,
+				430DFC342B3EB3DD009193CA /* Henosis_Task.xcdatamodeld */,
+			);
+			path = "Henosis-Task";
+			sourceTree = "<group>";
+		};
+		430DFC442B3EB3DF009193CA /* Henosis-TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				43C965B22B3F5183008CAD79 /* JsonMapperTest.swift */,
+			);
+			path = "Henosis-TaskTests";
+			sourceTree = "<group>";
+		};
+		430DFC4E2B3EB3DF009193CA /* Henosis-TaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC4F2B3EB3DF009193CA /* Henosis_TaskUITests.swift */,
+				430DFC512B3EB3DF009193CA /* Henosis_TaskUITestsLaunchTests.swift */,
+			);
+			path = "Henosis-TaskUITests";
+			sourceTree = "<group>";
+		};
+		430DFC5E2B3ECEC1009193CA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC2D2B3EB3DD009193CA /* SceneDelegate.swift */,
+				430DFC2B2B3EB3DD009193CA /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		430DFC5F2B3ECECA009193CA /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC6A2B3ED035009193CA /* ImageView+Extension.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		430DFC602B3ECED0009193CA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC6F2B3ED087009193CA /* ApiManager.swift */,
+				430DFC842B3EDF7D009193CA /* sample.json */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		430DFC612B3ECEFD009193CA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC312B3EB3DD009193CA /* Main.storyboard */,
+				430DFC392B3EB3DF009193CA /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		430DFC622B3ECF0B009193CA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC712B3ED0DA009193CA /* ProductHome */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		430DFC632B3ECF1B009193CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC372B3EB3DF009193CA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		430DFC712B3ED0DA009193CA /* ProductHome */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC722B3ED0EC009193CA /* Model */,
+				430DFC742B3ED0F6009193CA /* View */,
+				430DFC732B3ED0F0009193CA /* ViewModel */,
+			);
+			path = ProductHome;
+			sourceTree = "<group>";
+		};
+		430DFC722B3ED0EC009193CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC862B3EE017009193CA /* ConktailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		430DFC732B3ED0F0009193CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				430DFC8A2B3EEC37009193CA /* CocktailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		430DFC742B3ED0F6009193CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43C965AA2B3EF48C008CAD79 /* Details-SwiftUi */,
+				430DFC882B3EE49C009193CA /* CocktailListVC.swift */,
+				430DFC8C2B3EEC80009193CA /* CocktailCell.swift */,
+				430DFC8D2B3EEC80009193CA /* CocktailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		43C965AA2B3EF48C008CAD79 /* Details-SwiftUi */ = {
+			isa = PBXGroup;
+			children = (
+				43C965AB2B3EF4D9008CAD79 /* CocktailDetailView.swift */,
+				43C965AD2B3EFB3A008CAD79 /* IngridientList.swift */,
+				43C965AF2B3EFD3B008CAD79 /* CocktailImage.swift */,
+			);
+			path = "Details-SwiftUi";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		430DFC272B3EB3DD009193CA /* Henosis-Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430DFC552B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-Task" */;
+			buildPhases = (
+				430DFC242B3EB3DD009193CA /* Sources */,
+				430DFC252B3EB3DD009193CA /* Frameworks */,
+				430DFC262B3EB3DD009193CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Henosis-Task";
+			packageProductDependencies = (
+				430DFC6D2B3ED04B009193CA /* Kingfisher */,
+			);
+			productName = "Henosis-Task";
+			productReference = 430DFC282B3EB3DD009193CA /* Henosis-Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		430DFC402B3EB3DF009193CA /* Henosis-TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430DFC582B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-TaskTests" */;
+			buildPhases = (
+				430DFC3D2B3EB3DF009193CA /* Sources */,
+				430DFC3E2B3EB3DF009193CA /* Frameworks */,
+				430DFC3F2B3EB3DF009193CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				430DFC432B3EB3DF009193CA /* PBXTargetDependency */,
+			);
+			name = "Henosis-TaskTests";
+			productName = "Henosis-TaskTests";
+			productReference = 430DFC412B3EB3DF009193CA /* Henosis-TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		430DFC4A2B3EB3DF009193CA /* Henosis-TaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 430DFC5B2B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-TaskUITests" */;
+			buildPhases = (
+				430DFC472B3EB3DF009193CA /* Sources */,
+				430DFC482B3EB3DF009193CA /* Frameworks */,
+				430DFC492B3EB3DF009193CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				430DFC4D2B3EB3DF009193CA /* PBXTargetDependency */,
+			);
+			name = "Henosis-TaskUITests";
+			productName = "Henosis-TaskUITests";
+			productReference = 430DFC4B2B3EB3DF009193CA /* Henosis-TaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		430DFC202B3EB3DD009193CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					430DFC272B3EB3DD009193CA = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					430DFC402B3EB3DF009193CA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 430DFC272B3EB3DD009193CA;
+					};
+					430DFC4A2B3EB3DF009193CA = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 430DFC272B3EB3DD009193CA;
+					};
+				};
+			};
+			buildConfigurationList = 430DFC232B3EB3DD009193CA /* Build configuration list for PBXProject "Henosis-Task" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 430DFC1F2B3EB3DD009193CA;
+			packageReferences = (
+				430DFC6C2B3ED04B009193CA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = 430DFC292B3EB3DD009193CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				430DFC272B3EB3DD009193CA /* Henosis-Task */,
+				430DFC402B3EB3DF009193CA /* Henosis-TaskTests */,
+				430DFC4A2B3EB3DF009193CA /* Henosis-TaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		430DFC262B3EB3DD009193CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430DFC852B3EDF7D009193CA /* sample.json in Resources */,
+				430DFC3B2B3EB3DF009193CA /* LaunchScreen.storyboard in Resources */,
+				430DFC382B3EB3DF009193CA /* Assets.xcassets in Resources */,
+				430DFC332B3EB3DD009193CA /* Main.storyboard in Resources */,
+				430DFC8F2B3EEC80009193CA /* CocktailCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC3F2B3EB3DF009193CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC492B3EB3DF009193CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		430DFC242B3EB3DD009193CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430DFC892B3EE49C009193CA /* CocktailListVC.swift in Sources */,
+				43C965AE2B3EFB3A008CAD79 /* IngridientList.swift in Sources */,
+				430DFC8E2B3EEC80009193CA /* CocktailCell.swift in Sources */,
+				43C965B02B3EFD3B008CAD79 /* CocktailImage.swift in Sources */,
+				430DFC362B3EB3DD009193CA /* Henosis_Task.xcdatamodeld in Sources */,
+				43C965AC2B3EF4D9008CAD79 /* CocktailDetailView.swift in Sources */,
+				430DFC702B3ED087009193CA /* ApiManager.swift in Sources */,
+				430DFC2C2B3EB3DD009193CA /* AppDelegate.swift in Sources */,
+				430DFC6B2B3ED035009193CA /* ImageView+Extension.swift in Sources */,
+				430DFC2E2B3EB3DD009193CA /* SceneDelegate.swift in Sources */,
+				430DFC8B2B3EEC37009193CA /* CocktailViewModel.swift in Sources */,
+				430DFC872B3EE017009193CA /* ConktailModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC3D2B3EB3DF009193CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C965B32B3F5183008CAD79 /* JsonMapperTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		430DFC472B3EB3DF009193CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				430DFC502B3EB3DF009193CA /* Henosis_TaskUITests.swift in Sources */,
+				430DFC522B3EB3DF009193CA /* Henosis_TaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		430DFC432B3EB3DF009193CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430DFC272B3EB3DD009193CA /* Henosis-Task */;
+			targetProxy = 430DFC422B3EB3DF009193CA /* PBXContainerItemProxy */;
+		};
+		430DFC4D2B3EB3DF009193CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 430DFC272B3EB3DD009193CA /* Henosis-Task */;
+			targetProxy = 430DFC4C2B3EB3DF009193CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		430DFC312B3EB3DD009193CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430DFC322B3EB3DD009193CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		430DFC392B3EB3DF009193CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				430DFC3A2B3EB3DF009193CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		430DFC532B3EB3DF009193CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		430DFC542B3EB3DF009193CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		430DFC562B3EB3DF009193CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Henosis-Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		430DFC572B3EB3DF009193CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Henosis-Task/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		430DFC592B3EB3DF009193CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Henosis-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Henosis-Task";
+			};
+			name = Debug;
+		};
+		430DFC5A2B3EB3DF009193CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Henosis-Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Henosis-Task";
+			};
+			name = Release;
+		};
+		430DFC5C2B3EB3DF009193CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Henosis-Task";
+			};
+			name = Debug;
+		};
+		430DFC5D2B3EB3DF009193CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X98TJR4XF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pooja.PN.Henosis-TaskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Henosis-Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		430DFC232B3EB3DD009193CA /* Build configuration list for PBXProject "Henosis-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430DFC532B3EB3DF009193CA /* Debug */,
+				430DFC542B3EB3DF009193CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430DFC552B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430DFC562B3EB3DF009193CA /* Debug */,
+				430DFC572B3EB3DF009193CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430DFC582B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430DFC592B3EB3DF009193CA /* Debug */,
+				430DFC5A2B3EB3DF009193CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		430DFC5B2B3EB3DF009193CA /* Build configuration list for PBXNativeTarget "Henosis-TaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430DFC5C2B3EB3DF009193CA /* Debug */,
+				430DFC5D2B3EB3DF009193CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		430DFC6C2B3ED04B009193CA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		430DFC6D2B3ED04B009193CA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 430DFC6C2B3ED04B009193CA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		430DFC342B3EB3DD009193CA /* Henosis_Task.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				430DFC352B3EB3DD009193CA /* Henosis_Task.xcdatamodel */,
+			);
+			currentVersion = 430DFC352B3EB3DD009193CA /* Henosis_Task.xcdatamodel */;
+			path = Henosis_Task.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 430DFC202B3EB3DD009193CA /* Project object */;
+}
